@@ -51,14 +51,14 @@ fun MyBarChart() {
         BarData("May", 20F),
     )
 
-    val maxValue = barData.maxOf { it.value }
+    val maxValue = barData.maxOf { 100 }
     val barColor = Color.Blue
     val backgroundBarColor = Color.LightGray
     val spacing = 16.dp
 
     Box(
         contentAlignment = Alignment.Center,
-        modifier = Modifier.padding(horizontal = 40.dp)
+        modifier = Modifier.padding(horizontal = 10.dp)
     ) {
         Canvas(
             modifier = Modifier
